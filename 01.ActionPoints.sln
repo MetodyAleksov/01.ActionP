@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalProgramingEx", "FunctionalProgramingEx\FunctionalProgramingEx.csproj", "{376109E5-9A54-4541-BF72-05671BC59E86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.KnightsOfHonor", "02.KnightsOfHonor\02.KnightsOfHonor.csproj", "{B83822B1-F676-416F-A6C2-51073D6D7876}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{376109E5-9A54-4541-BF72-05671BC59E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376109E5-9A54-4541-BF72-05671BC59E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376109E5-9A54-4541-BF72-05671BC59E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83822B1-F676-416F-A6C2-51073D6D7876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83822B1-F676-416F-A6C2-51073D6D7876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83822B1-F676-416F-A6C2-51073D6D7876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83822B1-F676-416F-A6C2-51073D6D7876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

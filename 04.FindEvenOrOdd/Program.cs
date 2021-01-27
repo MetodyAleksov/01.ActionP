@@ -13,14 +13,6 @@ namespace _04.FindEvenOrOdd
                 .ToArray();
 
             string predicate = Console.ReadLine();
-
-            for (int i = input[0]; i <= input[1]; i++)
-            {
-                PrintEvenOrOdd(predicate, i);
-            }
-        }
-        static void PrintEvenOrOdd(string predicate, int n)
-        {
             Func<int, bool> func = x => x % 2 == 0;
 
             if (predicate == "odd")
@@ -28,6 +20,13 @@ namespace _04.FindEvenOrOdd
                 func = x => x % 2 != 0;
             }
 
+            for (int i = input[0]; i <= input[1]; i++)
+            {
+                PrintEvenOrOdd(func, i);
+            }
+        }
+        static void PrintEvenOrOdd(Func<int, bool> func, int n)
+        {
             if (func(n) == true)
             {
                 Console.Write($"{n} ");

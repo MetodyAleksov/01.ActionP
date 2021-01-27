@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CustomMinFunction", "03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FindEvenOrOdd", "04.FindEvenOrOdd\04.FindEvenOrOdd.csproj", "{BD734AA7-63F8-4CE0-B962-7CEF7C0F5F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.AppliedArithmetics", "05.AppliedArithmetics\05.AppliedArithmetics.csproj", "{4A3A7ABC-CB76-465B-888E-B2FE2E2A75D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ReverseAndExclude", "06.ReverseAndExclude\06.ReverseAndExclude.csproj", "{EA8FE6E3-D9C0-470B-A772-18528BB37BE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{BD734AA7-63F8-4CE0-B962-7CEF7C0F5F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD734AA7-63F8-4CE0-B962-7CEF7C0F5F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD734AA7-63F8-4CE0-B962-7CEF7C0F5F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3A7ABC-CB76-465B-888E-B2FE2E2A75D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3A7ABC-CB76-465B-888E-B2FE2E2A75D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3A7ABC-CB76-465B-888E-B2FE2E2A75D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3A7ABC-CB76-465B-888E-B2FE2E2A75D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8FE6E3-D9C0-470B-A772-18528BB37BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8FE6E3-D9C0-470B-A772-18528BB37BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8FE6E3-D9C0-470B-A772-18528BB37BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8FE6E3-D9C0-470B-A772-18528BB37BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

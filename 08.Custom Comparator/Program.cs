@@ -8,49 +8,47 @@ namespace _08.Custom_Comparator
     {
         static void Main(string[] args)
         {
-            int[] arr = Console.ReadLine()
+            int[] numbers = Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
-            arr = SortEvenBeforeOdd(arr);
 
-            Console.WriteLine(string.Join(" ", arr));
-        }
-        static int[] SortEvenBeforeOdd(int[] arr)
-        {
-            int[] finalArr = new int[arr.Length];
-
-            List<int> evenNums = new List<int>();
-            List<int> oddNums = new List<int>();
-
-            foreach (var item in arr)
+            Func<int[], int[]> sortBy = x =>
             {
-                if (item % 2 == 0)
-                {
-                    evenNums.Add(item);
-                }
-                else
-                {
-                    oddNums.Add(item);
-                }
-            }
+                int[] arr = new int[x.Length];
 
-            if (evenNums.Count > 0)
-            {
-                for (int i = 0; i < evenNums.Count; i++)
-                {
-                    finalArr[i] = evenNums[i];
-                }
-            }
-            if (oddNums.Count > 0)
-            {
-                for (int i = 0; i < oddNums.Count; i++)
-                {
-                    finalArr[i + evenNums.Count] = oddNums[i];
-                }
-            }
+                List<int> even = new List<int>();
+                List<int> odd = new List<int>();
 
-            return finalArr;
+                for (int i = 0; i < x.Length; i++)
+                {
+                    if (x[i] % 2 == 0)
+                    {
+                        even.Add(x[i]);
+                    }
+                    else
+                    {
+                        odd.Add(x[i]);
+                    }
+                }
+
+                even = even.OrderBy(x => x).ToList();
+                odd = odd.OrderBy(x => x).ToList();
+
+                for (int i = 0; i < even.Count; i++)
+                {
+                    arr[i] = even[i];
+                }
+                for (int i = even.Count; i < arr.Length; i++)
+                {
+                    arr[i] = odd[i - even.Count];
+                }
+                return arr;
+            };
+
+            numbers = sortBy(numbers);
+
+            Console.WriteLine(string.Join(" ", numbers));
         }
     }
 }
